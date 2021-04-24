@@ -1,25 +1,34 @@
 
+let num = 150;
 
-let time = prompt("Введите дату в формате YYYY-MM-DD", ''),
-    test = 2,
-    money = prompt("Ваш бюджет на месяц?", '');
-let appData = {
-    budget: money,
-    timeData: time,
-    expenses: {},
-    optionalExpenses: {},
-    income: [],
-    savings: false
+if (num < 49) {
+    console.log("Нет")
+}
+else if (num > 100) {
+    console.log("Много")
+}
+else {
+    console.log("Верно!")
 };
 
-let q1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
-    q2 = prompt("Введите обязательную статью расходов в этом месяце", ''),
-    q3 = prompt("Во сколько обойдется?", ''),
-    q4 = prompt("Во сколько обойдется?", '');
+(num == 150) ? console.log("Верно!") : console.log("Нет");
 
-appData.expenses.q1 = q2;
-appData.expenses.q3 = q4;
-alert(appData.budget/30);
+let num = 70;
+
+switch (num) {
+    case num < 49:
+        console.log("Нет");
+        break;
+    case num > 100:
+        console.log("Много");
+        break;
+    case 70:
+        console.log("Верно!");
+        break;
+    default:
+        console.log("No!");
+        break;
+}
 
 
 
